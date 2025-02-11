@@ -18,7 +18,7 @@ This is an ASP.NET Core API for managing an online store, including products, us
 - C#
 
 ## Installation & Setup
-### 1. Clone the Repository
+# 1. Clone the Repository
 ```sh
 git clone https://github.com/your-repo/online-store-api.git
 cd online-store-api
@@ -33,14 +33,21 @@ Update the `appsettings.json` file with your database connection string:
 ```
 
 ### 3. Run Migrations
+If using the command line:
 ```sh
 dotnet ef database update
+```
+If using Microsoft Visual Studio:
+```sh
+Update-Database
 ```
 
 ### 4. Run the API
 ```sh
 dotnet run
 ```
+
+###
 
 ## API Endpoints
 ### User Management
