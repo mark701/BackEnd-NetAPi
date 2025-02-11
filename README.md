@@ -9,7 +9,7 @@ This is an ASP.NET Core API for managing an online store, including products, us
 - **Invoice Management**: Create invoices with headers and detailed line items.
 - **Database Migrations**: Uses Entity Framework Core migrations to manage database schema changes.
 - Use Postman for Bearer Token authorization or other  similar tools after Creating a User
-- If u don't have plz comment this part in each controller for 401 Unauthorized : 
+- If u don't have plz comment this part in each controller for ignore 401 Unauthorized : 
 ```sh
    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)] 
 ```
