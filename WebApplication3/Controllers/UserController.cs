@@ -6,10 +6,11 @@ using WebApplication3.Entity;
 using WebApplication3.Entity.Security;
 using WebApplication3.InterFace;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace WebApplication3.Controllers
 {
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase

@@ -4,10 +4,12 @@ using Microsoft.Data.SqlClient;
 using WebApplication3.Entity;
 using WebApplication3.Entity.Security;
 using WebApplication3.InterFace;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+
 
 namespace WebApplication3.Controllers
 {
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
