@@ -66,7 +66,7 @@ dotnet run
 ## Running with Swagger
 Once the API is running, access Swagger UI for testing at:
 ```
-http://localhost:5000/swagger
+http://localhost:5000/swagger/index.html
 ```
 
 ## License
