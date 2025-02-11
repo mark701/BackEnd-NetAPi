@@ -28,7 +28,7 @@ cd online-store-api
 Update the `appsettings.json` file with your database connection string:
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Server=YOUR_SERVER;Database=OnlineStoreDB;Trusted_Connection=True;"
+   "DefaultConnection": "Server=localhost;Database=YourDataBase;Trusted_Connection=True;TrustServerCertificate=True;"
 }
 ```
 
