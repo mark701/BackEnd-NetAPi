@@ -69,6 +69,4 @@ Once the API is running, access Swagger UI for testing at:
 http://localhost:5000/swagger/index.html
 ```
 
-## License
-This project is licensed under the MIT License.
 
