@@ -5,6 +5,7 @@ using WebApplication3.Entity;
 using WebApplication3.Entity.Security;
 using WebApplication3.InterFace;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace WebApplication3.Controllers
