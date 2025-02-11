@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\ASP.NET\\WebApplication3\\WebApplication3\\WebApplication3.csproj": {}
+    "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\WebApplication3.csproj": {}
   },
   "projects": {
-    "G:\\ASP.NET\\WebApplication3\\WebApplication3\\WebApplication3.csproj": {
+    "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\WebApplication3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\ASP.NET\\WebApplication3\\WebApplication3\\WebApplication3.csproj",
+        "projectUniqueName": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\WebApplication3.csproj",
         "projectName": "WebApplication3",
-        "projectPath": "G:\\ASP.NET\\WebApplication3\\WebApplication3\\WebApplication3.csproj",
+        "projectPath": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\WebApplication3.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "G:\\ASP.NET\\WebApplication3\\WebApplication3\\obj\\",
+        "outputPath": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
