@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace WebApplication3.Entity
+namespace WebApplication3.Entity.DataBase
 {
-    public class InvoiceDetail 
+    public class InvoiceDetail
     {
         public int DetailId { get; set; }
         public int InvoiceHId { get; set; }

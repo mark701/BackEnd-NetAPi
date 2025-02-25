@@ -337,3 +337,4 @@ G:\Net Core\BackEnd-NetAPi\WebApplication3\obj\Debug\net8.0\refint\WebApplicatio
 G:\Net Core\BackEnd-NetAPi\WebApplication3\obj\Debug\net8.0\WebApplication3.pdb
 G:\Net Core\BackEnd-NetAPi\WebApplication3\obj\Debug\net8.0\WebApplication3.genruntimeconfig.cache
 G:\Net Core\BackEnd-NetAPi\WebApplication3\obj\Debug\net8.0\ref\WebApplication3.dll
+G:\Net Core\BackEnd-NetAPi\WebApplication3\bin\Debug\net8.0\WebApplication3.staticwebassets.runtime.json

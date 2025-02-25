@@ -40,9 +40,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidIssuer = builder.Configuration["Jwt:Issuer"],
             ValidateAudience = true,
             ValidAudience = builder.Configuration["Jwt:Audience"],
-            ValidateLifetime = true,
+            ValidateLifetime = true, // ENABLE LIFETIME VALIDATION
             ClockSkew = TimeSpan.Zero
         };
+
     });
 
 builder.Services.AddControllers().AddJsonOptions(options =>
@@ -64,10 +65,11 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddAuthorization();
 builder.Services.AddHttpContextAccessor();
-
 var app = builder.Build();
 
 app.UseCors("AllowAngularApp");
+
+app.UseStaticFiles();
 
 
 app.UseHttpsRedirection(); // Important for security

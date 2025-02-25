@@ -4,7 +4,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using WebApplication3.Context;
-using WebApplication3.Entity;
+using WebApplication3.Entity.DataBase;
 using WebApplication3.Entity.Security;
 using WebApplication3.InterFace;
 
@@ -15,17 +15,17 @@ namespace WebApplication3.Implemnetion
     public class UserService : Iuser
     {
         private readonly IDataBaseService<User> _User;
-        private readonly string _secretKey;
-        private readonly string _issuer;
-        private readonly string _audience;
+
         private readonly IHttpContextAccessor _access;
+        private readonly string PathString = "Assets/Users";
+        private readonly IConfiguration _config;
+
         public UserService(IConfiguration configuration, IDataBaseService<User> User, IHttpContextAccessor access)
         {
             _User = User;
-            _secretKey = configuration["Jwt:Key"];
-            _issuer = configuration["Jwt:Issuer"];
-            _audience = configuration["Jwt:Audience"];
+
             _access = access;
+            _config = configuration;
 
         }
 
@@ -57,15 +57,17 @@ namespace WebApplication3.Implemnetion
     {
         new Claim(ClaimTypes.Name, user.UserName),
         new Claim(ClaimTypes.Email, user.Email),
-        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString())
+        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+
     };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secretKey));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                issuer: _issuer,
-                audience: _audience,
+                issuer: _config["Jwt:Issuer"],
+                audience: _config["Jwt:Audience"],
                 claims: claims,
                 expires: DateTime.UtcNow.AddHours(1), // Use UTC time
                 signingCredentials: creds
@@ -75,7 +77,7 @@ namespace WebApplication3.Implemnetion
         }
 
         // Registration: hash the plain password, save the user and optionally generate a token
-        public async Task<UserRegister> Login(UserLogin userLogin)
+        public async Task<(UserRegister? userRegister, string? token)> Login(UserLogin userLogin)
         {
             var Data = await _User.Find(x => x.Email == userLogin.Email);
 
@@ -94,22 +96,26 @@ namespace WebApplication3.Implemnetion
                         {
                             UserName = Data.UserName,
                             Email = userLogin.Email,
-                            Token = token,
                             Password = userLogin.Password,
+                            PathURL=Data.PathURL
 
                         };
-                    return userRegister;
-
+                    return (userRegister, token);
                 }
             }
-         
-            return null;
+
+            return (null, null);
         }
 
-        public async Task<UserRegister> Register(UserRegister userRegister)
+        public async Task<(UserRegister? userRegister, string? token)> Register(UserRegister userRegister)
         {
             CreatePasswordHash(userRegister.Password, out string hash, out string salt);
 
+
+            if (userRegister.ProfileImage.FileName != null)
+            {
+                userRegister.PathURL = await _User.SaveImageAsync(userRegister.ProfileImage, PathString);
+            }
 
 
             User Data =
@@ -119,7 +125,7 @@ namespace WebApplication3.Implemnetion
               Email = userRegister.Email,
               PasswordHash = hash,
               PasswordSlot = salt,
-
+              PathURL = userRegister.PathURL,  // Null if no new image was provided.              
           };
 
             // Save user to the database
@@ -127,10 +133,10 @@ namespace WebApplication3.Implemnetion
 
             // Optionally, generate a token upon registration
 
-            userRegister.Token = GenerateJwtToken(Data);
+            var Token = GenerateJwtToken(Data);
 
 
-            return userRegister;
+            return (userRegister, Token);
         }
             
       public int? GetUserID()

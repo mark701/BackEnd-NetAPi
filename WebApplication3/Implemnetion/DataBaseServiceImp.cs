@@ -176,5 +176,48 @@ namespace WebApplication3.Implemnetion
             await _context.SaveChangesAsync();
             return entity;
         }
+
+
+        public async Task<string?> SaveImageAsync(IFormFile imageFile, string subFolder)
+
+        {     string[] AllowedExtensions = { ".jpg", ".jpeg", ".png" };
+               string MainFolder = "wwwroot"; 
+            try
+            {
+                if (imageFile == null || imageFile.Length == 0)
+                    throw new ArgumentException("Invalid image file.");
+
+                // Validate file extension
+                var fileExtension = Path.GetExtension(imageFile.FileName).ToLower();
+                if (!AllowedExtensions.Contains(fileExtension))
+                    throw new ArgumentException("Only JPG and PNG images are allowed.");
+
+
+                // Build relative folder path: wwwroot/Assets/{subFolder}
+                var folderPath = Path.Combine(MainFolder, subFolder);
+                Directory.CreateDirectory(folderPath);  // Ensure the folder exists
+
+                // Generate unique file name
+                var uniqueFileName = $"{Guid.NewGuid()}{fileExtension}";
+                var fullPath = Path.Combine(folderPath, uniqueFileName);
+
+                // Save the image
+                using (var fileStream = new FileStream(fullPath, FileMode.Create))
+                {
+                    await imageFile.CopyToAsync(fileStream);
+                }
+
+                // Return the relative path for easy access
+                return Path.Combine(subFolder, uniqueFileName).Replace("\\", "/");
+                //return uniqueFileName ;
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error saving image: {ex.Message}");
+                return null;
+            }
+        }
     }
 }
+

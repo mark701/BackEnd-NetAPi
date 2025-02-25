@@ -1,6 +1,6 @@
 ﻿using WebApplication3.Comman.Models;
 
-namespace WebApplication3.Entity
+namespace WebApplication3.Entity.DataBase
 {
     public class Product : CreatedUser
     {
@@ -11,9 +11,9 @@ namespace WebApplication3.Entity
         public int ProductPrice { get; set; }
 
         public int Productquantity { get; set; }
+        public string? PathImage { get; set; }
 
-
-        public ICollection<InvoiceDetail>?  InvoiceDetails { get; set; }
+        public ICollection<InvoiceDetail>? InvoiceDetails { get; set; }
 
 
     }

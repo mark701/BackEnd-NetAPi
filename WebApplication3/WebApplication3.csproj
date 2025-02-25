@@ -19,6 +19,11 @@
 
   <ItemGroup>
     <Folder Include="Controllers\Base\" />
+    <Folder Include="wwwroot\Assets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Assets\products\example.jpg" />
   </ItemGroup>
 
 </Project>

@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "lxxWjBYTu+nd/0JoSdB8Tqid45WMOmd4UTMyObbzm7A=",
+  "Hash": "PM12usKey1EsVmhPgeA+b14aJXGWh6BB1ZBPjgwaCfg=",
   "Source": "WebApplication3",
   "BasePath": "_content/WebApplication3",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplication3\\wwwroot",
+      "Source": "WebApplication3",
+      "ContentRoot": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\wwwroot\\",
+      "BasePath": "_content/WebApplication3",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\wwwroot\\Assets\\products\\example.jpg",
+      "SourceId": "WebApplication3",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\wwwroot\\",
+      "BasePath": "_content/WebApplication3",
+      "RelativePath": "Assets/products/example.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\products\\example.jpg"
+    }
+  ]
 }

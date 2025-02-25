@@ -26,6 +26,7 @@ namespace WebApplication3.InterFace
         Task<List<T>> GetInclude(params Expression<Func<T, object>>[] includes);
         Task<List<T>> GetIncludeWithCondition<TProperty>(Expression<Func<T, bool>> filter,params Expression<Func<T, TProperty>>[] includes);
 
+        public  Task<string> SaveImageAsync(IFormFile imageFile, string savePath);
 
 
         //List<T> Compare<T, TKey>(List<T> oldEntities, List<T> newEntities, Expression<Func<T, TKey>> propertySelector);

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebApplication3.Comman.Models;
-using WebApplication3.Entity;
+using WebApplication3.Entity.DataBase;
 
 namespace WebApplication3.Context
 {

@@ -6,9 +6,9 @@ namespace WebApplication3.InterFace
     public interface Iuser
     {
 
-        Task<UserRegister> Login(UserLogin userLogin);
+        Task<(UserRegister? userRegister, string? token)> Login(UserLogin userLogin);
 
-        Task<UserRegister> Register(UserRegister userRegister);
+        Task<(UserRegister? userRegister, string? token)> Register(UserRegister userRegister);
 
         int? GetUserID();
 

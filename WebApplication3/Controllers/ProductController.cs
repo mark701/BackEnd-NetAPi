@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
-using WebApplication3.Entity;
 using WebApplication3.Entity.Security;
 using WebApplication3.InterFace;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
+using WebApplication3.Entity.DataBase;
 
 
 namespace WebApplication3.Controllers
@@ -17,15 +17,16 @@ namespace WebApplication3.Controllers
     {
 
         private readonly IDataBaseService<Product> _ProductData;
-        private readonly Iuser _Iuser;
+        private readonly IProduct _Iproduct;
 
-        public ProductController(IDataBaseService<Product> ProductData, Iuser iuser) 
+
+        public ProductController(IDataBaseService<Product> ProductData, IProduct product) 
         {
             _ProductData = ProductData;
-            _Iuser = iuser;
+            _Iproduct = product;
         }
         [HttpPost("Save")]
-        public async Task<IActionResult> Save([FromBody] Product product)
+        public async Task<IActionResult> Save([FromForm] ProductData product)
         {
             if (!ModelState.IsValid)
             {
@@ -38,8 +39,8 @@ namespace WebApplication3.Controllers
 
             try
             {
-                product.UserId= _Iuser.GetUserID();
-                var Data = await _ProductData.Save(product);
+
+                var Data = await _Iproduct.Save(product);
 
                 return Ok(Data);
             }
@@ -118,7 +119,7 @@ namespace WebApplication3.Controllers
         }
 
         [HttpPut("Update")]
-        public async Task<IActionResult> Update([FromBody] Product product)
+        public async Task<IActionResult> Update([FromForm] ProductData product)
         {
             if (!ModelState.IsValid)
             {
@@ -131,8 +132,7 @@ namespace WebApplication3.Controllers
 
             try
             {
-                product.UserId = _Iuser.GetUserID();
-                var Data = await _ProductData.Update(product);
+                var Data = await _Iproduct.Update(product);
 
                 return Ok(Data);
             }

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.IdentityModel.Tokens;
 using WebApplication3.Context;
-using WebApplication3.Entity;
+using WebApplication3.Entity.DataBase;
 using WebApplication3.InterFace;
 
 namespace WebApplication3.Controllers
