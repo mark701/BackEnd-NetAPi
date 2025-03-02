@@ -24,6 +24,7 @@ builder.Services.AddScoped(typeof(IDataBaseService<>), typeof(DataBaseServiceImp
 
 builder.Services.AddScoped<Iuser, UserService>();
 
+builder.Services.AddScoped<IProduct, ProductImp>();
 
 
 
@@ -61,6 +62,8 @@ builder.Services.AddCors(options =>
                .AllowAnyHeader();
     });
 });
+
+
 
 
 builder.Services.AddAuthorization();

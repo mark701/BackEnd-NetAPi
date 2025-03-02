@@ -3,10 +3,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using WebApplication3.Context;
 using WebApplication3.Entity.DataBase;
 using WebApplication3.InterFace;
+using WebApplication3.Migrations;
 
 namespace WebApplication3.Controllers
 {
@@ -53,7 +55,7 @@ namespace WebApplication3.Controllers
 
                 invoiceHeader.UserId = _Iuser.GetUserID();
                 var userdata=await _IuserData.Find(x=>x.UserId== invoiceHeader.UserId);
-                invoiceHeader.InvoiceName = userdata.UserName;
+                    invoiceHeader.InvoiceName = userdata.UserName;
 
                 invoiceHeader.TotalAmount = invoiceHeader.InvoiceDetails.Sum(x => x.LineTotal);
                 //ordersHDs.orderConfigDs.Select(x=>x.OrderConfigHID)= ordersHDs.OrderConfigHID;
@@ -90,6 +92,40 @@ namespace WebApplication3.Controllers
             try
             {
 
+                var Data = await _InvoiceHeader.GetAll();
+                //var Data = await _InvoiceHeader.GetInclude(x => x.InvoiceDetails);
+
+
+                return Ok(Data);
+            }
+            catch (SqlException ex)
+            {
+
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+        [HttpGet("GetHeaderDetail")]
+        public async Task<IActionResult> GetDetailByID()
+        {
+            if (!ModelState.IsValid)
+            {
+
+
+                return BadRequest(ModelState);
+            }
+
+
+
+            try
+            {
+
                 //var Data = await _InvoiceHeader.GetAll();
                 var Data = await _InvoiceHeader.GetInclude(x => x.InvoiceDetails);
 
@@ -107,6 +143,71 @@ namespace WebApplication3.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet("GetHeaderDetailsPages")]
+        public async Task<IActionResult> GetHeaderDetailsPages(int pageNumber = 1, int pageSize = 10)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            {
+                try
+                {
+                    // Get data and total count
+                    var (totalCount, data) = await _InvoiceHeader.GetIncludePages(pageNumber, pageSize, x => x.InvoiceDetails);
+
+                    // Return a response with both the totalCount and data
+                    return Ok(new
+                    {
+                        TotalCount = totalCount,
+                        Data = data
+                    });
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+            }
+        }
+
+        [HttpGet("GetDetailsByHeaderID/{ID}")]
+        public async Task<IActionResult> GetDetailByHeaderID(int ID)
+        {
+            if (!ModelState.IsValid)
+            {
+
+
+                return BadRequest(ModelState);
+            }
+
+
+
+            try
+            {
+
+                //var Data = await _InvoiceHeader.GetAll();
+                var Data = await _InvoiceDetail.FindAll(x=>x.InvoiceHId== ID);
+
+
+                return Ok(Data);
+            }
+            catch (SqlException ex)
+            {
+
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+
+     
 
         [HttpDelete("Delete/{ID}")]
         public async Task<IActionResult> Delete(int ID)

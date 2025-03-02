@@ -12,6 +12,7 @@
 
         public IFormFile? ProfileImage { get; set; }
         public string? ImageUrl { get; set; }   // <-- Add this to return full image path
+        public float rating { get; set; }
 
     }
 }

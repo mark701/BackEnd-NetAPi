@@ -34,6 +34,7 @@ namespace WebApplication3.Implemnetion
                 PathImage = PathName,
                 CreateDateAndTime = DateTime.Now,
                 UserId = _Iuser.GetUserID(),
+                rating=product.rating
 
             };
                 return await _product.Save(data);

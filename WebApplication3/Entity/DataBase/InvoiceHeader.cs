@@ -11,6 +11,8 @@ namespace WebApplication3.Entity.DataBase
         public DateTime InvoiceDate { get; set; } = DateTime.Now;
         public decimal? TotalAmount { get; set; }
 
+        public int Status { get; set; } = 0;
+
         // Navigation property for related details
 
         public ICollection<InvoiceDetail>? InvoiceDetails { get; set; }

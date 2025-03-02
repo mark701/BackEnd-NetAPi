@@ -97,7 +97,8 @@ namespace WebApplication3.Implemnetion
                             UserName = Data.UserName,
                             Email = userLogin.Email,
                             Password = userLogin.Password,
-                            PathURL=Data.PathURL
+                            PathURL = Data.PathURL,
+                            UserID = Data.UserId,
 
                         };
                     return (userRegister, token);
@@ -112,7 +113,7 @@ namespace WebApplication3.Implemnetion
             CreatePasswordHash(userRegister.Password, out string hash, out string salt);
 
 
-            if (userRegister.ProfileImage.FileName != null)
+            if (userRegister.ProfileImage != null)
             {
                 userRegister.PathURL = await _User.SaveImageAsync(userRegister.ProfileImage, PathString);
             }
@@ -126,6 +127,7 @@ namespace WebApplication3.Implemnetion
               PasswordHash = hash,
               PasswordSlot = salt,
               PathURL = userRegister.PathURL,  // Null if no new image was provided.              
+
           };
 
             // Save user to the database

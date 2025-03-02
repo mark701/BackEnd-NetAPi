@@ -3,32 +3,60 @@
   "WorkspaceRootPath": "G:\\Net Core\\BackEnd-NetAPi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\entity\\security\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\entity\\security\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\implemnetion\\databaseserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\implemnetion\\databaseserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\entity\\security\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\entity\\security\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\entity\\database\\invoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\entity\\database\\invoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\interface\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\interface\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Migrations\\20250302180147_addColoumnInInvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication3\\Migrations\\20250302180147_addColoumnInInvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\implemnetion\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\implemnetion\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\implemnetion\\productimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\implemnetion\\productimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\entity\\database\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\entity\\database\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\entity\\security\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\entity\\security\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Migrations\\20250226201702_alterSomeDAta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication3\\Migrations\\20250226201702_alterSomeDAta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\entity\\database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,36 +67,12 @@
       "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\implemnetion\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\implemnetion\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\migrations\\20250220013619_updatedatabase123.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\migrations\\20250220013619_updatedatabase123.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\entity\\database\\invoiceheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\entity\\database\\invoiceheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Migrations\\20250220013506_updateDatabase123.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication3\\Migrations\\20250220013506_updateDatabase123.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\implemnetion\\productimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\implemnetion\\productimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\implemnetion\\databaseserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\implemnetion\\databaseserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\entity\\database\\invoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\entity\\database\\invoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,12 +83,12 @@
       "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\interface\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\interface\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\interface\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\entity\\security\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\entity\\security\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|g:\\net core\\backend-netapi\\webapplication3\\migrations\\20250226201725_altersomedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C4948D-F766-4D28-806F-4888D78E1FEA}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\migrations\\20250226201725_altersomedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -93,8 +97,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 231,
-          "SelectedChildIndex": 7,
+          "DockedWidth": 257,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,7 +106,121 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InvoiceController.cs",
+              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Controllers\\InvoiceController.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Controllers\\InvoiceController.cs",
+              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Controllers\\InvoiceController.cs*",
+              "RelativeToolTip": "WebApplication3\\Controllers\\InvoiceController.cs*",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAAJoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T17:16:58.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InvoiceDetail.cs",
+              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\DataBase\\InvoiceDetail.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Entity\\DataBase\\InvoiceDetail.cs",
+              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\DataBase\\InvoiceDetail.cs",
+              "RelativeToolTip": "WebApplication3\\Entity\\DataBase\\InvoiceDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T14:06:42.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataBaseServiceImp.cs",
+              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Implemnetion\\DataBaseServiceImp.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Implemnetion\\DataBaseServiceImp.cs",
+              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Implemnetion\\DataBaseServiceImp.cs",
+              "RelativeToolTip": "WebApplication3\\Implemnetion\\DataBaseServiceImp.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAuwI4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T19:56:58.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250302180147_addColoumnInInvoice.cs",
+              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Migrations\\20250302180147_addColoumnInInvoice.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Migrations\\20250302180147_addColoumnInInvoice.cs",
+              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Migrations\\20250302180147_addColoumnInInvoice.cs",
+              "RelativeToolTip": "WebApplication3\\Migrations\\20250302180147_addColoumnInInvoice.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T18:01:47.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Controllers\\ProductController.cs",
+              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebApplication3\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAACoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T17:17:14.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20250226201702_alterSomeDAta.cs",
+              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Migrations\\20250226201702_alterSomeDAta.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Migrations\\20250226201702_alterSomeDAta.cs",
+              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Migrations\\20250226201702_alterSomeDAta.cs",
+              "RelativeToolTip": "WebApplication3\\Migrations\\20250226201702_alterSomeDAta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T20:17:02.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Controllers\\UserController.cs",
+              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebApplication3\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAqwCwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T17:17:19.831Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Program.cs",
+              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Program.cs",
+              "RelativeToolTip": "WebApplication3\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T16:22:26.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Implemnetion\\UserService.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Implemnetion\\UserService.cs",
+              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Implemnetion\\UserService.cs",
+              "RelativeToolTip": "WebApplication3\\Implemnetion\\UserService.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAswE8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T21:59:47.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "User.cs",
               "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\DataBase\\User.cs",
               "RelativeDocumentMoniker": "WebApplication3\\Entity\\DataBase\\User.cs",
@@ -114,55 +232,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Implemnetion\\UserService.cs",
-              "RelativeDocumentMoniker": "WebApplication3\\Implemnetion\\UserService.cs",
-              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Implemnetion\\UserService.cs",
-              "RelativeToolTip": "WebApplication3\\Implemnetion\\UserService.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAEUAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T21:59:47.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Product.cs",
               "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\DataBase\\Product.cs",
               "RelativeDocumentMoniker": "WebApplication3\\Entity\\DataBase\\Product.cs",
               "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\DataBase\\Product.cs",
               "RelativeToolTip": "WebApplication3\\Entity\\DataBase\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T01:02:11.449Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "WebApplication3\\Controllers\\ProductController.cs",
-              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "WebApplication3\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvxwAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "20250226201725_alterSomeDAta.cs",
+              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Migrations\\20250226201725_alterSomeDAta.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Migrations\\20250226201725_alterSomeDAta.cs",
+              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Migrations\\20250226201725_alterSomeDAta.cs",
+              "RelativeToolTip": "WebApplication3\\Migrations\\20250226201725_alterSomeDAta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T17:17:14.885Z"
+              "WhenOpened": "2025-02-26T20:17:26.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "InvoiceHeader.cs",
-              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\DataBase\\InvoiceHeader.cs",
-              "RelativeDocumentMoniker": "WebApplication3\\Entity\\DataBase\\InvoiceHeader.cs",
-              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\DataBase\\InvoiceHeader.cs",
-              "RelativeToolTip": "WebApplication3\\Entity\\DataBase\\InvoiceHeader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T14:08:30.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
               "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\appsettings.json",
               "RelativeDocumentMoniker": "WebApplication3\\appsettings.json",
@@ -174,56 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Iuser.cs",
-              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\InterFace\\Iuser.cs",
-              "RelativeDocumentMoniker": "WebApplication3\\InterFace\\Iuser.cs",
-              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\InterFace\\Iuser.cs",
-              "RelativeToolTip": "WebApplication3\\InterFace\\Iuser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T22:10:26.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "WebApplication3\\Controllers\\UserController.cs",
-              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Controllers\\UserController.cs",
-              "RelativeToolTip": "WebApplication3\\Controllers\\UserController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAAD4AAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T17:17:19.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication3\\Program.cs",
-              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Program.cs",
-              "RelativeToolTip": "WebApplication3\\Program.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T16:22:26.412Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "InvoiceController.cs",
-              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Controllers\\InvoiceController.cs",
-              "RelativeDocumentMoniker": "WebApplication3\\Controllers\\InvoiceController.cs",
-              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Controllers\\InvoiceController.cs",
-              "RelativeToolTip": "WebApplication3\\Controllers\\InvoiceController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T17:16:58.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "20250220013619_updateDatabase123.cs",
               "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Migrations\\20250220013619_updateDatabase123.cs",
               "RelativeDocumentMoniker": "WebApplication3\\Migrations\\20250220013619_updateDatabase123.cs",
@@ -235,31 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DataBaseServiceImp.cs",
-              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Implemnetion\\DataBaseServiceImp.cs",
-              "RelativeDocumentMoniker": "WebApplication3\\Implemnetion\\DataBaseServiceImp.cs",
-              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Implemnetion\\DataBaseServiceImp.cs",
-              "RelativeToolTip": "WebApplication3\\Implemnetion\\DataBaseServiceImp.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAA2wNIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T22:08:39.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "InvoiceDetail.cs",
-              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\DataBase\\InvoiceDetail.cs",
-              "RelativeDocumentMoniker": "WebApplication3\\Entity\\DataBase\\InvoiceDetail.cs",
-              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\DataBase\\InvoiceDetail.cs",
-              "RelativeToolTip": "WebApplication3\\Entity\\DataBase\\InvoiceDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T14:06:42.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "WebApplication3\\Context\\ApplicationDbContext.cs",
@@ -271,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "IProduct.cs",
               "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\InterFace\\IProduct.cs",
               "RelativeDocumentMoniker": "WebApplication3\\InterFace\\IProduct.cs",
@@ -296,61 +317,62 @@
           ]
         },
         {
-          "DockedWidth": 169,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 143,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserRegister.cs",
-              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\Security\\UserRegister.cs",
-              "RelativeDocumentMoniker": "WebApplication3\\Entity\\Security\\UserRegister.cs",
-              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\Security\\UserRegister.cs",
-              "RelativeToolTip": "WebApplication3\\Entity\\Security\\UserRegister.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T01:08:16.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ProductImp.cs",
-              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Implemnetion\\ProductImp.cs",
-              "RelativeDocumentMoniker": "WebApplication3\\Implemnetion\\ProductImp.cs",
-              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Implemnetion\\ProductImp.cs",
-              "RelativeToolTip": "WebApplication3\\Implemnetion\\ProductImp.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAqwDQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T22:11:10.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 4,
               "Title": "IDataBaseService.cs",
               "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\InterFace\\IDataBaseService.cs",
               "RelativeDocumentMoniker": "WebApplication3\\InterFace\\IDataBaseService.cs",
               "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\InterFace\\IDataBaseService.cs",
               "RelativeToolTip": "WebApplication3\\InterFace\\IDataBaseService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAcwBwAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAA8wBoAAACKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T23:48:36.052Z"
+              "WhenOpened": "2025-02-19T23:48:36.052Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UserRegister.cs",
+              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\Security\\UserRegister.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Entity\\Security\\UserRegister.cs",
+              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\Security\\UserRegister.cs",
+              "RelativeToolTip": "WebApplication3\\Entity\\Security\\UserRegister.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T01:08:16.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductImp.cs",
+              "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Implemnetion\\ProductImp.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Implemnetion\\ProductImp.cs",
+              "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Implemnetion\\ProductImp.cs",
+              "RelativeToolTip": "WebApplication3\\Implemnetion\\ProductImp.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvyQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T22:11:10.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ProductData.cs",
               "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\Security\\ProductData.cs",
               "RelativeDocumentMoniker": "WebApplication3\\Entity\\Security\\ProductData.cs",
               "ToolTip": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Entity\\Security\\ProductData.cs",
               "RelativeToolTip": "WebApplication3\\Entity\\Security\\ProductData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T00:23:18.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T00:23:18.006Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "20250220013506_updateDatabase123.cs",
               "DocumentMoniker": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\Migrations\\20250220013506_updateDatabase123.cs",
               "RelativeDocumentMoniker": "WebApplication3\\Migrations\\20250220013506_updateDatabase123.cs",

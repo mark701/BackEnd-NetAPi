@@ -55,7 +55,7 @@ namespace WebApplication3.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        [AllowAnonymous]
         [HttpGet("Get")]
         public async Task<IActionResult> Get()
         {

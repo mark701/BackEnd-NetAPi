@@ -75,6 +75,9 @@ namespace WebApplication3.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("TotalAmount")
                         .HasColumnType("decimal(18,2)");
 
@@ -116,6 +119,9 @@ namespace WebApplication3.Migrations
 
                     b.Property<int?>("UserId")
                         .HasColumnType("int");
+
+                    b.Property<float>("rating")
+                        .HasColumnType("real");
 
                     b.HasKey("ProductID");
 

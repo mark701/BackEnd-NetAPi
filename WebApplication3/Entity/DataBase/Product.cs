@@ -13,6 +13,8 @@ namespace WebApplication3.Entity.DataBase
         public int Productquantity { get; set; }
         public string? PathImage { get; set; }
 
+        public float rating { get; set; }
+
         public ICollection<InvoiceDetail>? InvoiceDetails { get; set; }
 
 

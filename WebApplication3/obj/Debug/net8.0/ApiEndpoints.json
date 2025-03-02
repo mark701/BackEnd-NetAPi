@@ -27,6 +27,53 @@
   },
   {
     "ContainingType": "WebApplication3.Controllers.InvoiceController",
+    "Method": "GetDetailByHeaderID",
+    "RelativePath": "api/Invoice/GetDetailsByHeaderID/{ID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication3.Controllers.InvoiceController",
+    "Method": "GetDetailByID",
+    "RelativePath": "api/Invoice/GetHeaderDetail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication3.Controllers.InvoiceController",
+    "Method": "GetHeaderDetailsPages",
+    "RelativePath": "api/Invoice/GetHeaderDetailsPages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication3.Controllers.InvoiceController",
     "Method": "InsertHeaderWithDetail",
     "RelativePath": "api/Invoice/Save",
     "HttpMethod": "POST",
@@ -125,6 +172,11 @@
         "Name": "ImageUrl",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "rating",
+        "Type": "System.Single",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -171,6 +223,11 @@
         "Name": "ImageUrl",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "rating",
+        "Type": "System.Single",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -199,6 +256,11 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "UserID",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
       {
         "Name": "UserName",
         "Type": "System.String",

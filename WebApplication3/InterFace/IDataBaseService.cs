@@ -24,6 +24,8 @@ namespace WebApplication3.InterFace
         Task<bool> DeleteCondation(Expression<Func<T, bool>> Filter);
 
         Task<List<T>> GetInclude(params Expression<Func<T, object>>[] includes);
+        Task<(int totalCount, List<T> data)> GetIncludePages(int pageNumber, int pageSize, params Expression<Func<T, object>>[] includes);
+
         Task<List<T>> GetIncludeWithCondition<TProperty>(Expression<Func<T, bool>> filter,params Expression<Func<T, TProperty>>[] includes);
 
         public  Task<string> SaveImageAsync(IFormFile imageFile, string savePath);

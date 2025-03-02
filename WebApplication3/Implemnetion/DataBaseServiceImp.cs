@@ -135,6 +135,28 @@ namespace WebApplication3.Implemnetion
 
             return await query.ToListAsync();
         }
+
+        public async Task<(int totalCount, List<T> data)> GetIncludePages(int pageNumber, int pageSize, params Expression<Func<T, object>>[] includes)
+        {
+            IQueryable<T> query = _context.Set<T>();
+
+            foreach (var include in includes)
+            {
+                query = query.Include(include);
+            }
+
+            // Total count
+            var totalCount = await query.CountAsync();
+
+            // Apply pagination
+            var skip = (pageNumber - 1) * pageSize;
+
+            // Fetch paginated data
+            var data = await query.Skip(skip).Take(pageSize).ToListAsync();
+
+            return (totalCount, data);
+        }
+
         public async Task<List<T>> GetIncludeWithCondition<TProperty>(
     Expression<Func<T, bool>> filter,
     params Expression<Func<T, TProperty>>[] includes)

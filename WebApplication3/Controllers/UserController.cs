@@ -44,11 +44,17 @@ namespace WebApplication3.Controllers
 
                 var (userRegister, token) = await  _user.Login(userLogin);
 
-                return Ok(new
+                if(token != null)
                 {
-                    User = userRegister,
-                    Token = token
-                });
+                    return Ok(new
+                    {
+                        User = userRegister,
+                        Token = token
+                    });
+
+                }
+                return NotFound();
+
             }
             catch (SqlException ex)
             {
@@ -78,9 +84,21 @@ namespace WebApplication3.Controllers
             try
             {
 
-                var Data = await _user.Register(userRegister);
+                var (userData, token) = await _user.Register(userRegister);
 
-                return Ok(Data);
+                if (token != null)
+                {
+                    return Ok(new
+                    {
+                        User = userData,
+                        Token = token
+                    });
+
+                }
+                return NotFound();
+
+
+
             }
             catch (SqlException ex)
             {
