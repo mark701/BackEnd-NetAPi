@@ -23,13 +23,15 @@ namespace WebApplication3.Controllers
         private readonly IDataBaseService<InvoiceDetail> _InvoiceDetail;
 
         private readonly Iuser _Iuser;
+        private readonly Iinvoice _Iinvoice;
 
 
-        public InvoiceController(IDataBaseService<InvoiceHeader> InvoiceHeader, Iuser iuser, IDataBaseService<User> IuserData, IDataBaseService<InvoiceDetail> InvoiceDetail) 
+        public InvoiceController(IDataBaseService<InvoiceHeader> InvoiceHeader, Iinvoice Iinvoice, Iuser iuser, IDataBaseService<User> IuserData, IDataBaseService<InvoiceDetail> InvoiceDetail) 
         {
             _InvoiceHeader = InvoiceHeader;
             _Iuser = iuser;
             _IuserData = IuserData;
+            _Iinvoice = Iinvoice;
             _InvoiceDetail = InvoiceDetail;
 
         }
@@ -53,14 +55,16 @@ namespace WebApplication3.Controllers
 
 
 
-                invoiceHeader.UserId = _Iuser.GetUserID();
-                var userdata=await _IuserData.Find(x=>x.UserId== invoiceHeader.UserId);
-                    invoiceHeader.InvoiceName = userdata.UserName;
+                //invoiceHeader.UserId = _Iuser.GetUserID();
+                //var userdata=await _IuserData.Find(x=>x.UserId== invoiceHeader.UserId);
+                //    invoiceHeader.InvoiceName = userdata.UserName;
 
-                invoiceHeader.TotalAmount = invoiceHeader.InvoiceDetails.Sum(x => x.LineTotal);
-                //ordersHDs.orderConfigDs.Select(x=>x.OrderConfigHID)= ordersHDs.OrderConfigHID;
-                var Data = await _InvoiceHeader.Save(invoiceHeader);
+                //invoiceHeader.TotalAmount = invoiceHeader.InvoiceDetails.Sum(x => x.LineTotal);
+                ////ordersHDs.orderConfigDs.Select(x=>x.OrderConfigHID)= ordersHDs.OrderConfigHID;
+                //var Data = await _InvoiceHeader.Save(invoiceHeader);
 
+
+                var Data = await _Iinvoice.Save(invoiceHeader);
 
 
 
@@ -155,8 +159,9 @@ namespace WebApplication3.Controllers
             {
                 try
                 {
+                    var UserID = _Iuser.GetUserID();
                     // Get data and total count
-                    var (totalCount, data) = await _InvoiceHeader.GetIncludePages(pageNumber, pageSize, x => x.InvoiceDetails);
+                    var (totalCount, data) = await _InvoiceHeader.GetIncludePages(pageNumber, pageSize , x=>x.UserId==UserID, x => x.InvoiceDetails);
 
                     // Return a response with both the totalCount and data
                     return Ok(new

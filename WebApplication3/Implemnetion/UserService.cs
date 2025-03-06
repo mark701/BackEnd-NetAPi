@@ -94,11 +94,10 @@ namespace WebApplication3.Implemnetion
                     UserRegister userRegister =
                         new UserRegister()
                         {
+                            UserID = Data.UserId,
                             UserName = Data.UserName,
                             Email = userLogin.Email,
-                            Password = userLogin.Password,
                             PathURL = Data.PathURL,
-                            UserID = Data.UserId,
 
                         };
                     return (userRegister, token);
@@ -134,8 +133,12 @@ namespace WebApplication3.Implemnetion
             Data = await _User.Save(Data);
 
             // Optionally, generate a token upon registration
+            userRegister.UserID = Data.UserId;
 
             var Token = GenerateJwtToken(Data);
+
+            // Remove password before returning
+            userRegister.Password = null;
 
 
             return (userRegister, Token);
@@ -159,6 +162,126 @@ namespace WebApplication3.Implemnetion
                 return null;
             }
         }
+
+        public async Task<(UserRegister? userRegister, string? token)> ChangePassword(ChangePassword password)
+        {
+
+            var ID = GetUserID();
+            if (ID != null)
+            {
+                var Data = await _User.Find(x => x.UserId == ID);
+
+                if (Data != null) {
+
+
+                    var IsVerifyPassword = VerifyPassword(password.CurrentPassword, Data.PasswordHash, Data.PasswordSlot);
+                    if (IsVerifyPassword)
+                    {
+                        CreatePasswordHash(password.NewPassword, out string hash, out string salt);
+
+
+                        Data.PasswordHash = hash;
+                        Data.PasswordSlot = salt;
+
+                        Data = await _User.Update(Data);
+
+
+                        UserRegister UserData =
+                          new UserRegister()
+                          {
+                              UserID= Data.UserId,
+
+                              UserName = Data.UserName,
+                              Email = Data.Email,
+                              PathURL = Data.PathURL,  // Null if no new image was provided.              
+
+                          };
+
+
+                        var Token = GenerateJwtToken(Data);
+                        return (UserData, Token);
+
+                    }
+
+
+                }
+
+
+
+
+            }
+
+
+
+
+            return (null, null); ;
+        }
+
+
+        public async Task<(UserRegister? userRegister, string? token)> update(UserUpdate user)
+        {
+
+            var ID = GetUserID();
+            if (ID != null)
+            {
+                var Data = await _User.Find(x => x.UserId == ID);
+
+                if (Data != null)
+                {
+
+                    if (!user.UserName.IsNullOrEmpty())
+                    {
+                        Data.UserName = user.UserName;
+                    }
+                    else if (user.ProfileImage!=null) 
+                    {
+                        if (!Data.PathURL.IsNullOrEmpty())
+                        {
+                            await _User.DeleteImageAsync(Data.PathURL);
+                        }
+
+                        Data.PathURL = await _User.SaveImageAsync(user.ProfileImage, PathString);
+
+                    }
+
+
+
+
+
+                    Data = await _User.Update(Data);
+
+
+                        UserRegister UserData =
+                          new UserRegister()
+                          {
+                              UserID = Data.UserId,
+                              UserName = Data.UserName,
+                              Email = Data.Email,
+   
+                              PathURL = Data.PathURL,  // Null if no new image was provided.              
+
+                          };
+
+
+                        var Token = GenerateJwtToken(Data);
+                        return (UserData, Token);
+
+                    
+
+
+                }
+
+
+
+
+            }
+
+
+
+
+            return (null, null); ;
+        }
     }
+    
 }
 

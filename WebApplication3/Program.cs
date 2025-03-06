@@ -23,6 +23,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped(typeof(IDataBaseService<>), typeof(DataBaseServiceImp<>));
 
 builder.Services.AddScoped<Iuser, UserService>();
+builder.Services.AddScoped<Iinvoice, InvoiceImp>();
 
 builder.Services.AddScoped<IProduct, ProductImp>();
 
@@ -53,24 +54,38 @@ builder.Services.AddControllers().AddJsonOptions(options =>
     options.JsonSerializerOptions.WriteIndented = true; // Optional: Formats JSON output for readability
 });
 
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("AllowAngularApp", builder =>
+//    {
+//        builder.WithOrigins("http://localhost:4200") // Angular app URL
+//               .AllowAnyMethod()
+//               .AllowAnyHeader();
+//    });
+//});
+
+
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAngularApp", builder =>
-    {
-        builder.WithOrigins("http://localhost:4200") // Angular app URL
-               .AllowAnyMethod()
-               .AllowAnyHeader();
-    });
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader()
+                  .WithExposedHeaders("Content-Disposition"); // Add if needed
+
+        });
 });
-
-
 
 
 builder.Services.AddAuthorization();
 builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 
-app.UseCors("AllowAngularApp");
+//app.UseCors("AllowAngularApp");
+app.UseCors("AllowAll");
+
 
 app.UseStaticFiles();
 

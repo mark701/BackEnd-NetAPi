@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g8c0vmJ02UHYkOpRdJq/6IVjhKmmHTaPyf6R7z6xCkg=",
+  "Hash": "q+f4u+gYXDYWTbyyQ8oSUcfmHZaQ/qw1YJzvl72aTuk=",
   "Source": "WebApplication3",
   "BasePath": "_content/WebApplication3",
   "Mode": "Default",
@@ -224,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Assets\\Users\\4a2f9a72-1472-41c3-a2c2-15a7246c2e4f.png"
+    },
+    {
+      "Identity": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\wwwroot\\Assets\\Users\\58c47950-ec29-466f-a7e6-e03e437f4967.jpg",
+      "SourceId": "WebApplication3",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\wwwroot\\",
+      "BasePath": "_content/WebApplication3",
+      "RelativePath": "Assets/Users/58c47950-ec29-466f-a7e6-e03e437f4967.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\Users\\58c47950-ec29-466f-a7e6-e03e437f4967.jpg"
     },
     {
       "Identity": "G:\\Net Core\\BackEnd-NetAPi\\WebApplication3\\wwwroot\\Assets\\Users\\717514d1-0a2a-465a-bc5e-fb95c65dd353.png",

@@ -7,6 +7,7 @@ using WebApplication3.InterFace;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using WebApplication3.Entity.DataBase;
+using Microsoft.AspNetCore.Identity;
 
 namespace WebApplication3.Controllers
 {
@@ -110,6 +111,74 @@ namespace WebApplication3.Controllers
 
                 return BadRequest(ex.Message);
             }
+        }
+
+
+        [HttpPost("change-password")]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePassword password)
+        {
+            if (password == null || string.IsNullOrWhiteSpace(password.CurrentPassword) || string.IsNullOrWhiteSpace(password.NewPassword))
+            {
+                return BadRequest(new { message = "Invalid request data" });
+            }
+            if (!ModelState.IsValid)
+            {
+
+
+                return BadRequest(ModelState);
+            }
+
+
+
+             var(userData, token) = await _user.ChangePassword(password);
+
+            if (token != null)
+            {
+                return Ok(new
+                {
+                    User = userData,
+                    Token = token
+                });
+
+
+            }
+            return NotFound();
+
+
+
+        }
+
+
+        [HttpPut("update")]
+        public async Task<IActionResult> update([FromForm] UserUpdate user)
+        {
+
+            if (!ModelState.IsValid)
+            {
+
+
+                return BadRequest(ModelState);
+            }
+
+
+
+
+            var (userData, token) = await _user.update(user);
+
+            if (token != null)
+            {
+                return Ok(new
+                {
+                    User = userData,
+                    Token = token
+                });
+
+
+            }
+            return NotFound();
+
+
+
         }
 
     }

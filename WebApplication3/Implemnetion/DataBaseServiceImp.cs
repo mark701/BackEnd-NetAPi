@@ -136,9 +136,19 @@ namespace WebApplication3.Implemnetion
             return await query.ToListAsync();
         }
 
-        public async Task<(int totalCount, List<T> data)> GetIncludePages(int pageNumber, int pageSize, params Expression<Func<T, object>>[] includes)
+        public async Task<(int totalCount, List<T> data)> GetIncludePages(int pageNumber, int pageSize, Expression<Func<T, bool>>? criteria, params Expression<Func<T, object>>[] includes)
         {
-            IQueryable<T> query = _context.Set<T>();
+            IQueryable<T> query;
+            if (criteria==null)
+            {
+                query = _context.Set<T>();
+
+            }
+            else
+            {
+                 query = _context.Set<T>().Where(criteria);
+
+            }
 
             foreach (var include in includes)
             {
@@ -194,7 +204,15 @@ namespace WebApplication3.Implemnetion
 
         public async Task<T> Update(T entity)
         {
-            await _context.Set<T>().AddRangeAsync(entity);
+            _context.Set<T>().Update(entity);
+
+            await _context.SaveChangesAsync();
+            return entity;
+        }
+
+        public async Task<List<T>> UpdateRange(List<T> entity)
+        {
+            _context.Set<T>().UpdateRange(entity); // ✅ Use UpdateRange for multiple entities
             await _context.SaveChangesAsync();
             return entity;
         }
@@ -240,6 +258,50 @@ namespace WebApplication3.Implemnetion
                 return null;
             }
         }
+        public Task DeleteImageAsync(string imagePath)
+        {
+            const string MainFolder = "wwwroot";
+
+            if (string.IsNullOrEmpty(imagePath))
+                throw new ArgumentException("Image path cannot be null or empty.");
+
+
+            var fullPath = Path.Combine(MainFolder, imagePath);
+            var resolvedPath = Path.GetFullPath(fullPath);
+
+            // Security check to prevent directory traversal
+            var basePath = Path.GetFullPath(MainFolder);
+            if (!resolvedPath.StartsWith(basePath))
+                throw new ArgumentException("Invalid image path.");
+
+            if (File.Exists(resolvedPath))
+            {
+                File.Delete(resolvedPath);
+            }
+
+            return Task.CompletedTask;
+
+        }
+
+        //public Task DeleteImageAsync(string imagePath)
+        //{
+        //    if (string.IsNullOrEmpty(imagePath))
+        //        throw new ArgumentException("Invalid image path.");
+
+        //    // Build full path by combining with the wwwroot directory
+        //    string fullPath = Path.Combine("wwwroot", imagePath);
+
+        //    if (File.Exists(fullPath))
+        //    {
+        //        File.Delete(fullPath);
+        //        return Task.CompletedTask; // Successfully deleted
+        //    }
+        //    else
+        //    {
+        //        return null; // File not found
+        //    }
+
+        //}
     }
 }
 
