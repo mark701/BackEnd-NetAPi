@@ -1,4 +1,4 @@
-# Online Store Management System - ASP.NET Core API
+# Online Store Management System (Demo) - ASP.NET Core API
 
 ## Overview
 This is an ASP.NET Core API for managing an online store, including products, users, invoices, and invoice details. The API supports CRUD operations and is built using Entity Framework Core with database migrations.
