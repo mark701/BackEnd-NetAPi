@@ -26,7 +26,7 @@ This is an ASP.NET Core API for managing an online store, including products, us
 # 1. Clone the Repository
 ```sh
 git clone https://github.com/mark701/BackEnd-NetAPi.git
-cd online-store-api
+cd BackEnd-NetAPi
 ```
 
 ### 2. Configure Database
